@@ -140,21 +140,33 @@ As mentioned previously, the LeNet architecture was chosen for this. This had al
 
 I originially chose to test on 7 images shown here:
 
-![alt text][image5] ![alt text][image6] 
 
-![alt text][image7] ![alt text][image8]
+![alt text][image5] 
 
-![alt text][image9] ![alt text][image10]
+![alt text][image6] 
+
+![alt text][image7] 
+
+![alt text][image8]
+
+![alt text][image9] 
+
+![alt text][image10]
 
 ![alt text][image11]
 
+
 However, after initial success with these images I tried to add some more difficult images. This one is an image from night time with a light directly above, so the lighting in this image is not standard.
+
 
 ![alt text][image12] 
 
+
 This one is from night time as well and partially covered in snow. I was curious to see how my network would react to conditions like these.
 
+
 ![alt text][image13]
+
 
 #### 2. The submission documents the performance of the model when tested on the captured images. The performance on the new images is compared to the accuracy results of the test set.
 
