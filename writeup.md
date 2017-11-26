@@ -17,11 +17,11 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./report_images/loss_plot_initial.jpg "loss_plot_initial"
-[image2]: ./report_images/loss_plot_final.jpg "loss_plot_final"
-[image3]: ./report_images/sign_types.jpg "sign_types"
+[image1]: ./report_images/loss_plot_initial.png "loss_plot_initial"
+[image2]: ./report_images/loss_plot_final.png "loss_plot_final"
+[image3]: ./report_images/sign_types.png "sign_types"
 [image4]: ./report_images/bar_chart.png "bar_chart"
-[image5]: ./custom_images/sign_01.jpg "Traffic Sign 1"
+[image5]: ./custom_images/sign_01.png "Traffic Sign 1"
 [image6]: ./custom_images/sign_02.png "Traffic Sign 2"
 [image7]: ./custom_images/sign_03.png "Traffic Sign 3"
 [image8]: ./custom_images/sign_04.png "Traffic Sign 4"
@@ -141,14 +141,19 @@ As mentioned previously, the LeNet architecture was chosen for this. This had al
 I originially chose to test on 7 images shown here:
 
 ![alt text][image5] ![alt text][image6] 
+
 ![alt text][image7] ![alt text][image8]
+
 ![alt text][image9] ![alt text][image10]
+
 ![alt text][image11]
 
 However, after initial success with these images I tried to add some more difficult images. This one is an image from night time with a light directly above, so the lighting in this image is not standard.
+
 ![alt text][image12] 
 
 This one is from night time as well and partially covered in snow. I was curious to see how my network would react to conditions like these.
+
 ![alt text][image13]
 
 #### 2. The submission documents the performance of the model when tested on the captured images. The performance on the new images is compared to the accuracy results of the test set.
@@ -183,6 +188,7 @@ For the first image, the model is relatively sure that this is a stop sign (prob
 | 6.982266584950694e-32 | Pedestrians									|
 
 For the second image:
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 9.993367791175842e-01	| Road work										| 
@@ -190,12 +196,14 @@ For the second image:
 | 1.536754581366040e-07	| Wild animals crossing							|
 | 2.654338138174950e-10	| Bumpy road									|
 | 5.348664219861909e-13 | Beware of ice/snow							|
+
 This is the first image that shows even a hint of doubt. But these other possibilities are still very very small compared to the highest output.
 
 Images 3-7 show similar trends to the first two and can be viewed in the python notebook or html file.
 
 
 For the eigth image:
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 8.641582727432251e-01	| General caution								| 
@@ -203,6 +211,7 @@ For the eigth image:
 | 1.352573830715187e-09	| Bicycles crossing								|
 | 7.784226388474202e-12	| Road narrows on the right						|
 | 2.031765013326445e-15 | Pedestrians									|
+
 This is the only image to be classified incorrectly. And you can notice that the correct classification has the second highest probability of ~14%. Perhaps some data augmentation to account for different lighting conditions would have been useful in correctly clasifying the image.
 
 For the 9th image, there are two dominant choices. The first being the correct classification with a probability of ~77 percent. The second option having a probability of ~23 percent. All other options are significantly lower.
